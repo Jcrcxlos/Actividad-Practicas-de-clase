@@ -1,0 +1,163 @@
+@charset "utf-8";
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.Principal{
+    background-color:#0D0D0D;
+    width: auto;
+    height: auto;;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Principal .Encabezado{
+    background-color:#0D0D0D;
+    color:#D9ACA3;
+    text-align: center;
+    font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    padding: 20px;
+    height: auto;
+    font-weight:200;
+    font-size: 16px;
+}
+
+nav ul a {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    list-style-type: none;
+		color: white;
+		text-align: center;
+		padding: 16px;
+		text-decoration: none;
+}
+
+nav ul a:hover {
+  background-color: grey;
+}
+
+.Principal .Art_01 {
+    background-color:#7E8C70;
+    margin-top: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: auto;
+    float:left;
+    overflow: auto;
+}
+.Principal .Art_01 img{
+    width: 30%;
+    padding: 20px;
+    display: block;
+    overflow: auto;
+    float: right;
+}
+
+.Principal .Art_02 {
+    background-color:#BF8969;
+    margin-top: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: auto;
+}
+.Principal .Foot_01{
+    background-color: #02202A;
+    color: aliceblue;
+    text-align: center;
+    padding: 40px;
+}
+
+
+
+
+@media (min-width:0px) and (max-width:768px){
+    .Principal .Art_01{
+        background-color:#D9ACA3;
+        text-align:right;
+        font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+}
+
+@media (min-width:768px) and (max-width:1024px){
+    .Principal .Art_01{
+        background-color:#BF7E04;
+        font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+}
+}
+
+@media (min-width:1024px) and (max-width:1280px){
+    .Principal .Art_01{
+        background-color:#7E8C70;
+        text-align: center;
+}
+}
+
+
+
+@media (min-width:0px) and (max-width:768px){
+    .Principal .Art_02{
+        background-color:#7E8C70;
+}
+}
+
+@media (min-width:768px) and (max-width:1024px){
+    .Principal .Art_02{
+        background-color:#0D0D0D;
+        color: aliceblue;
+}
+}
+
+@media (min-width:1024px) and (max-width:1280px){
+    .Principal .Art_02{
+        background-color:#BF7E04;
+}
+}
+
+
+
+
+@media (min-width:0px) and (max-width:768px){
+    .Principal .Art_01 img{
+    float:left;
+}
+}
+
+@media (min-width:768px) and (max-width:1024px){
+    .Principal .Art_01 img{
+    width: 30%;
+    padding: 20px;
+    display: block;
+    overflow: auto;
+
+}
+}
+
+
+
+
+@media (min-width:0px) and (max-width:768px){
+    .Principal .Encabezado{
+        color:#BF7E04;
+        font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+}
+}
+
+@media (min-width:768px) and (max-width:1024px){
+    .Principal .Encabezado{
+        color: #7E8C70;
+        font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+}
+}
+
+@media (min-width:1024px) and (max-width:1280px){
+    .Principal .Art_01{
+        background-color:#7E8C70;
+}
+}
+
+
+

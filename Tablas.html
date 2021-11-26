@@ -1,0 +1,513 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>tablas</title>
+    <style type="text/css">
+        *{
+			margin:0;
+			padding: 0;
+		}
+        table{
+            /*width: 760px;
+			height: auto;
+			margin:20px;
+			padding:20px 20px;
+            background-color:#272D2F;
+            color:#FE724C;*/
+            background-color:#272D2F;
+            color:#F2F2F2;
+        }
+        #t01,#t01 th,#t01 td,#t02,#t02 th, #t02 td{
+            border-collapse: collapse;
+        }
+        #t01,#t01 th, #t01 td{
+            border: 2px solid #FFC529;
+            padding: 5px;
+        }
+        #t01 th{
+            background-color:#F2F2F2;
+            color: #272D2F;
+            text-align: left;
+            }
+        #t02,#t02 th, #t02 td{
+            border: 2px solid #FFC529;
+            padding: 5px;
+            border-collapse: separate;
+            border-spacing: 10px;
+        }
+        #t02 th{
+            background-color:#FFC529;
+            color:#F2F2F2;
+            text-align: left;
+        }
+        header,nav,footer,main{
+            width:100%;
+			background-color:#272D2F;
+            padding: 20px;
+			margin: 0 auto;}
+        main{
+            background-color: #F2F2F2;
+        }
+        footer{
+            text-align: center;
+            color: #F2F2F2
+        }
+        nav{
+            background-color:#FFC529;}
+        h1{
+            text-align: center;
+            color:#FFC529;}
+        section{
+			width:720px;
+			height:auto;
+			background-color:#FE724C;
+            margin:20px auto;
+            padding:20px;
+        }
+        #t03 tr:nth-child(even){
+            color:#272D2F;
+            background-color:#FFC529;
+        }
+        #t03 tr:nth-child(odd){
+            background-color: #F2F2F2;
+            color:#272D2F;
+        }
+        #t03 th{
+            background-color:#272D2f;
+            color:#F2F2F2;
+        }
+        #t04 td:nth-child(even){
+            color:#FFC529;
+            background-color:#272D2F;
+        }
+        #t04 td:nth-child(odd){
+            background-color: #F2F2F2;
+            color:#272D2F;
+        }
+        #t05{
+            width: 640px;
+        }
+        #t05,#t05 tr:hover,td{
+            border-collapse: collapse;
+        }
+        #t05 th{
+            height: 50px;
+        }
+        #t05 td{
+            height: 60px;
+            padding: 10px;
+            vertical-align:bottom;
+        }
+        #t05 tr:hover{
+            background-color:#F2F2F2;
+            color:#FFC529;
+        }
+        #t05 th{
+            background-color:#FFC529;
+            color:#272D2F;
+        }
+        #t06{
+            
+            width: 100%;
+        }
+        #t06 th,#t06 td{
+            text-align: center;
+            border:1px solid #FFC529;
+            height: 25px;
+            
+        }
+        #t06,#t06 th,#t06 td{
+            border-collapse: collapse;
+        }
+        h2{
+            color: #F2F2F2;
+        }
+        nav ul a {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    list-style-type: none;
+		color: white;
+		text-align: center;
+		padding: 16px;
+		text-decoration: none;
+}
+
+nav ul a:hover {
+  background-color: grey;
+}
+        
+    </style>
+</head>
+<body>
+    <header>
+    <h1>Tablas en html</h1>
+    </header>
+     <nav>
+        <ul>
+        <a href="index.html"><li>Mi primera pagina</li></a>
+        <a href="Tablas.html"><li>Tablas</li></a>
+        <a href="Listas.html"><li>Listas</li></a>
+        <a href="Enlaces.html"><li>Enlaces</li></a>
+        <a href="Video.html"><li>Video</li></a>
+        <a href="Audio.html"><li>Audio</li></a>
+            <a href="MediaQueries.html">MediaQueries</a>
+            <a href="flexbox.html">Flexbox</a>
+    </ul>
+    </nav>
+<main>
+<section>
+        <h2>Tabla simple</h2>
+          <table border="1">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Direccion</th>
+                        <th>Telefono</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Carlos Romero</td>
+                        <td>Tepox #11x</td>
+                        <td>2213643838</td>
+                    </tr>
+                    <tr>
+                        <td>Luka Barrera</td>
+                        <td>Maritas #2</td>
+                        <td>221085908</td>
+                    </tr>
+                    <tr>
+                        <td>Max barrera</td>
+                        <td>Moritas #505</td>
+                        <td>2224730975</td>
+                    </tr>
+                    <tr>
+                        <td>Sara Fernandez</td>
+                        <td>Orion Sur #2008</td>
+                        <td>2222126412</td>
+                    </tr>
+                    <tr>
+                        <td>Andi Medina</td>
+                        <td>Calle Robles</td>
+                        <td>2226262626</td>
+                    </tr>
+                </tbody>
+                <tfoot></tfoot>
+            </table>
+</section>
+<section>
+        <h2>Tabla con bordes colapsados</h2>
+            <table id="t01"
+                   border="1">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Direccion</th>
+                        <th>Telefono</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Carlos Romero</td>
+                        <td>Tepox #11x</td>
+                        <td>2213643838</td>
+                    </tr>
+                    <tr>
+                        <td>Luka Barrera</td>
+                        <td>Maritas #2</td>
+                        <td>221085908</td>
+                    </tr>
+                    <tr>
+                        <td>Max barrera</td>
+                        <td>Moritas #505</td>
+                        <td>2224730975</td>
+                    </tr>
+                    <tr>
+                        <td>Sara Fernandez</td>
+                        <td>Orion Sur #2008</td>
+                        <td>2222126412</td>
+                    </tr>
+                    <tr>
+                        <td>Andi Medina</td>
+                        <td>Calle Robles</td>
+                        <td>2226262626</td>
+                    </tr>
+                </tbody>
+                <tfoot></tfoot>
+            </table>
+    </section>
+      <section>
+        <h2>Tabla que abarca mas de una columna</h2>
+        <table id="t02"
+               border="1">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Direccion</th>
+              <th colspan="2">Telefono</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Carlos Romero</td>
+              <td>Tepox #11x</td>
+              <td>2213643838</td>
+              <td>2221382580</td>
+            </tr>
+            <tr>
+              <td>Luka Barrera</td>
+              <td>Maritas #2</td>
+              <td>221085908</td>
+              <td>2212209990</td>
+            </tr>
+            <tr>
+              <td>Max barrera</td>
+              <td>Moritas #505</td>
+              <td>2224730975</td>
+              <td>2221378950</td>
+            </tr>
+            <tr>
+              <td>Sara Fernandez</td>
+              <td>Orion Sur #2008</td>
+              <td>2222126412</td>
+              <td>2227852990</td>
+            </tr>
+            <tr>
+              <td>Andi Medina</td>
+              <td>Calle Robles</td>
+              <td>2226262626</td>
+              <td>2221378950</td>
+            </tr>
+          </tbody>
+          <tfoot>
+          </tfoot>
+        </table>
+      </section>
+<section>
+        <h2>Tabla con bandas o rayas horizontales de diferente color</h2>
+          <table id="t03" border="1">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Direccion</th>
+                        <th>Telefono</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Carlos Romero</td>
+                        <td>Tepox #11x</td>
+                        <td>2213643838</td>
+                    </tr>
+                    <tr>
+                        <td>Luka Barrera</td>
+                        <td>Maritas #2</td>
+                        <td>221085908</td>
+                    </tr>
+                    <tr>
+                        <td>Max barrera</td>
+                        <td>Moritas #505</td>
+                        <td>2224730975</td>
+                    </tr>
+                    <tr>
+                        <td>Sara Fernandez</td>
+                        <td>Orion Sur #2008</td>
+                        <td>2222126412</td>
+                    </tr>
+                    <tr>
+                        <td>Andi Medina</td>
+                        <td>Calle Robles</td>
+                        <td>2226262626</td>
+                    </tr>
+                </tbody>
+                <tfoot></tfoot>
+            </table>
+</section>
+<section>
+        <h2>Tabla con bandas o rayas verticales de diferente color</h2>
+          <table id="t04"
+                 border="1">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Direccion</th>
+                        <th>Telefono</th>
+                        <th>Ciudad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Carlos Romero</td>
+                        <td>Tepox #11x</td>
+                        <td>2213643838</td>
+                        <td>Puebla</td>
+                    </tr>
+                    <tr>
+                        <td>Luka Barrera</td>
+                        <td>Maritas #2</td>
+                        <td>221085908</td>
+                        <td>Puebla</td>
+                    </tr>
+                    <tr>
+                        <td>Max barrera</td>
+                        <td>Moritas #505</td>
+                        <td>2224730975</td>
+                        <td>Puebla</td>
+                    </tr>
+                    <tr>
+                        <td>Sara Fernandez</td>
+                        <td>Orion Sur #2008</td>
+                        <td>2222126412</td>
+                        <td>Puebla</td>
+                    </tr>
+                    <tr>
+                        <td>Andi Medina</td>
+                        <td>Calle Robles</td>
+                        <td>2226262626</td>
+                        <td>Puebla</td>
+                    </tr>
+                     <tr>
+                        <td>Andi Medina</td>
+                        <td>Calle Robles</td>
+                        <td>2226262626</td>
+                         <td>Puebla</td>
+                    </tr>
+                </tbody>
+                <tfoot></tfoot>
+            </table>
+</section>
+    <section>
+        <h2>Tabla con resaltado flotante</h2>
+          <table id="t05"
+                 border="1">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Direccion</th>
+                        <th>Telefono</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Carlos Romero</td>
+                        <td>Tepox #11x</td>
+                        <td>2213643838</td>
+                    </tr>
+                    <tr>
+                        <td>Luka Barrera</td>
+                        <td>Maritas #2</td>
+                        <td>221085908</td>
+                    </tr>
+                    <tr>
+                        <td>Max barrera</td>
+                        <td>Moritas #505</td>
+                        <td>2224730975</td>
+                    </tr>
+                    <tr>
+                        <td>Sara Fernandez</td>
+                        <td>Orion Sur #2008</td>
+                        <td>2222126412</td>
+                    </tr>
+                    <tr>
+                        <td>Andi Medina</td>
+                        <td>Calle Robles</td>
+                        <td>2226262626</td>
+                    </tr>
+                </tbody>
+                <tfoot></tfoot>
+            </table>
+</section>
+    <section style="overflow-x: auto">
+    <h2>Tabla responsiva</h2>
+        <table id="t06">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Puntos</th>
+                    <th>Puntos</th>
+                    <th>Puntos</th>
+                    <th>Puntos</th>
+                    <th>Puntos</th>
+                    <th>Puntos</th>
+                    <th>Puntos</th>
+                    <th>Puntos</th>
+                    <th>Puntos</th>
+                    <th>Puntos</th>
+                    <th>Puntos</th>
+                    <th>Puntos</th>
+                    <th>Puntos</th>
+                    <th>Puntos</th>
+                    <th>Puntos</th>
+                    <th>Puntos</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Rolando</td>
+                <td>75</td>
+                <td>100</td>
+                <td>75</td>
+                <td>100</td>
+                <td>75</td>
+                <td>100</td>
+                <td>75</td>
+                <td>100</td>
+                <td>75</td>
+                <td>95</td>
+                <td>88</td>
+                <td>100</td>
+                <td>98</td>
+                <td>92</td>
+                <td>95</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Isabel del Rosario</td>
+                <td>75</td>
+                <td>50</td>
+                <td>75</td>
+                <td>50</td>
+                <td>75</td>
+                <td>50</td>
+                <td>75</td>
+                <td>50</td>
+                <td>75</td>
+                <td>95</td>
+                <td>88</td>
+                <td>85</td>
+                <td>99</td>
+                <td>99</td>
+                <td>99</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Maria Lopez</td>
+                <td>75</td>
+                <td>100</td>
+                <td>75</td>
+                <td>50</td>
+                <td>75</td>
+                <td>50</td>
+                <td>75</td>
+                <td>100</td>
+                <td>75</td>
+                <td>95</td>
+                <td>88</td>
+                <td>55</td>
+                <td>30</td>
+                <td>21</td>
+                <td>75</td>
+                <td>100</td>
+            </tr>
+            </tbody>
+            <tfoot></tfoot>
+        </table>
+    </section>
+  </main>
+    <footer>
+        <h5>Elaborado por: Juan Carlos Romero Calderón</h5>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Listas en html</title>
+	<style type="text/css">
+		*{
+			margin:0;
+			padding: 0;
+		}
+		dt{
+			font-weight: bold;
+			font-size:24px;
+			color:#012326;
+		}
+		h1,h2{
+			font-size: 48px;
+			color:aliceblue;
+		}
+		h2{
+			font-size: 36px;
+			color:#012326;
+		}
+		header,nav,main,footer{
+			width:100%;
+			/*height: :100px;*/
+			background-color:#012326;
+			padding: 50px;
+			margin: 0 auto;
+		}
+		nav{
+			background-color:#272D2F;
+			height: auto;
+			padding: 10px 50px;
+		
+		}
+		main{
+			background-color:#5D7F8C;
+			height: auto;
+		}
+		footer{
+			background-color:#012326;
+			height: 60px;
+		}
+		section{
+			width: 760px;
+			height: auto;
+			background-color:#819FA6;
+			margin:20px;
+			padding:20px 20px;
+             display: block;
+    margin-left: auto;
+    margin-right: auto;
+		}
+		ul{
+			margin: 20px;
+		}
+		ol{
+			margin: 50px;
+			}
+		dl{
+			margin: 20px;
+		}
+		dt{
+			marging: 10px
+		}
+		dd{
+			margin: 20px 50px;
+		}
+		header{
+			text-align: center;
+		}
+		footer{
+			text-align: center;
+		}
+		h4{
+			color: white;
+		}
+
+        nav ul a {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    list-style-type: none;
+		color: white;
+		text-align: center;
+		padding: 16px;
+		text-decoration: none;
+}
+
+nav ul a:hover {
+  background-color: grey;
+}
+	</style>
+</head>
+
+<body>
+	<header>
+		<h1>Listas en html</h1>
+	</header>
+   <nav>
+        <ul>
+        <a href="index.html"><li>Mi primera pagina</li></a>
+        <a href="Tablas.html"><li>Tablas</li></a>
+        <a href="Listas.html"><li>Listas</li></a>
+        <a href="Enlaces.html"><li>Enlaces</li></a>
+        <a href="Video.html"><li>Video</li></a>
+        <a href="Audio.html"><li>Audio</li></a>
+            <a href="MediaQueries.html">MediaQueries</a>
+            <a href="flexbox.html">Flexbox</a>
+    </ul>
+    </nav>
+	<main>
+	 	<section>
+			<h2>Lista desordenada o de viñetas</h2>
+			<ul>
+				<li>Mexico</li>
+				<li>España</li>
+				<li>Argentina</li>
+				<li>Guatemala</li>
+				<li>Italia</li>
+			</ul>
+		</section>
+		<section>
+			<h2>Lista ordenadas o con viñetas numeradas</h2>
+			<ol>
+				<li>Grecia</li>
+				<li>Bolibia</li>
+				<li>Canada</li>
+				<li>Estados Unidos</li>
+				<li>Australia</li>
+			</ol>
+		</section>
+		<section>
+		  <h2>Lista mixta</h2>
+		  <ul>
+				<li>Mexico
+				<ol>
+					<li>Puebla</li>
+					<li>Veracruz</li>
+					<li>Baja California</li>
+					<li>Oaxaca</li>
+				</ol>
+				</li>
+		    <li>España
+			 	<ol>
+					<li>Madrid</li>
+					<li>Barcelona</li>
+					<li>Sevilla</li>
+				</ol>
+			  </li>
+		    <li>Argentina
+			 	<ol>
+					<li>Puebla</li>
+					<li>Veracruz</li>
+					<li>Baja California</li>
+					<li>Oaxaca</li>
+				</ol>
+			  </li>
+		    <li>Guatemala
+			 	<ol>
+					<li>Puebla</li>
+					<li>Veracruz</li>
+					<li>Baja California</li>
+					<li>Oaxaca</li>
+				</ol>
+			  </li>
+		    <li>Italia
+			 	<ol>
+					<li>Puebla</li>
+					<li>Veracruz</li>
+					<li>Baja California</li>
+					<li>Oaxaca</li>
+				</ol>
+			  </li>
+			  <li>España
+			 	<ol>
+				  <li>Barceloa</li>
+				  <li>Sevilla</li>
+				  <li>Madrid</li>
+				</ol>
+			  </li>
+	      </ul>
+		</section>
+		<section>
+			<h2>Lista de descripcion</h2>
+			<dl>
+				<dt style="font-style:italic">Hosting</dt>
+				<!--Strong es una etiqueta automatica de DW el problema es que no se sabe como lo interpretaran los distintos navegadores-->
+				<dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore amet voluptatem sunt? Fugit labore, officia corporis vero omnis, unde quibusdam.</dd>
+				<dt><b>Dominio</b></dt>
+				<dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis reprehenderit aliquam perferendis accusantium at, cum expedita non nesciunt obcaecati quam!</dd>
+				<dt style="font-weight: normal">Sitio Web</dt>
+				<dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia veritatis commodi aperiam perferendis fugiat, vel, odit numquam cumque soluta tenetur cum voluptatum. Similique natus aliquam odio, quae! Esse, perferendis, qui.</dd>
+				<dt>Sistema Web</dt>
+				<dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci vitae dolorum esse repudiandae, laudantium, sit aperiam aut doloribus ut deserunt?</dd>
+			</dl>
+		</section>
+		<section>
+		<h2>Lista con viñeta e imagen</h2>
+			<ul style="list-style-image: url('imagenes/cal.png')">
+                <li>Isabel del Rosario</li>
+                <li>Ariadna Lopez</li>
+                <li>Jesica Otero</li>
+                <li>Leslie macias</li>
+                <li>Monica Perez</li>
+			</ul>
+		</section>
+	</main>
+	<nav></nav>
+	<footer>
+		<h4>Elaborado por Juan Carlos Romero Calderón</h4>
+	</footer>
+</body>
+</html>
